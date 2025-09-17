@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBFB">
+
+    <!-- Topbar -->
+    <include
+        android:id="@+id/viewTopbar"
+        layout="@layout/view_topbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ScrollView chính -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/viewTopbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="">
+
+
+            <!-- Vùng 1 -->
+            <LinearLayout
+                android:id="@+id/vung1"
+                android:background="@drawable/item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                >
+
+                <!-- TextView trên cùng -->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuong trinh dao tao"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- LinearLayout chứa 3 item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                                               android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView1_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vung3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg"
+                android:layout_marginBottom="16dp">
+
+                <!-- TextView trên cùng -->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuong trinh dao tao"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- LinearLayout chứa 3 item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vung2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg"
+                android:layout_marginBottom="16dp">
+
+                <!-- TextView trên cùng -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuong trinh dao tao"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- LinearLayout chứa 3 item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView5_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vung4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg"
+                android:layout_marginBottom="16dp">
+
+                <!-- TextView trên cùng -->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuong trinh dao tao"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- LinearLayout chứa 3 item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="null"
+                            android:src='@drawable/ic_calendar'
+                            android:contentDescription="icon"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textView4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuong trinh dao tao"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
